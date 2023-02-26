@@ -1,7 +1,18 @@
 .App {
-  text-align: center;
+  max-width:400px;
+  display:flex;
+  flex-direction: column; 
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+ margin:auto;
+ 
 }
 
+h1{
+  text-shadow : 3px 3px 0px #222, 5px 5px 0px #226c37; color : #35a57c; 
+  font-size: 45px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -18,8 +29,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +46,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.3rem;
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  background: #8a2387;
+  background: -webkit-linear-gradient(
+    to right,
+    #167aa1,
+    #4fb5c9,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #167aa1,
+    #4fb5c9,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  outline: none;
+  padding: 0.3rem 1.8rem 0.3rem 1.8rem;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+  border: none;
+  outline: 0;
+}
+
+.btn:focus {
+  filter: brightness(110%);
+  border: none;
+  outline: 0;
+}
+
+.btn:active {
+  border: none;  
+}
+
+.input {
+  background-color: whitesmoke;
+  color: black;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  position: relative;
+  margin: 5px;
+  height:0.7rem;
+
 }
